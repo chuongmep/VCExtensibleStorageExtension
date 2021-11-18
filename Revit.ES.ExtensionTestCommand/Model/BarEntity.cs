@@ -1,9 +1,7 @@
 using System.Collections.Generic;
-using Revit.ES.Extension;
 using Revit.ES.Extension.Attributes;
-using Autodesk.Revit.DB;
 
-namespace Revit.ES.ExtensionTestCommand
+namespace Revit.ES.Extension.Demo.Model
 {
     [Schema("0488C456-66B2-445F-817C-34C1A4DF4546",
         "TestEntitySchema",

@@ -1,19 +1,19 @@
 #region Namespaces
+
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
-using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
-using Revit.ES.Extension;
+using Revit.ES.Extension.Demo.Model;
 using Revit.ES.Extension.ElementExtensions;
 
 #endregion
 
-namespace Revit.ES.ExtensionTestCommand
+namespace Revit.ES.Extension.Demo.Command
 {
     [Transaction(TransactionMode.Manual)]
     public class Command : IExternalCommand
@@ -29,7 +29,7 @@ namespace Revit.ES.ExtensionTestCommand
             UIDocument uidoc = uiapp.ActiveUIDocument;
             Document doc = uidoc.Document;
 
-            var projectInfo = doc.ProjectInformation;
+            ProjectInfo projectInfo = doc.ProjectInformation;
 
             FooEntity fooEntity = new FooEntity();
 
@@ -202,7 +202,7 @@ namespace Revit.ES.ExtensionTestCommand
                 transaction.Commit();
             }
 
-            var extractedFooEntity =
+            FooEntity extractedFooEntity =
                 projectInfo.GetEntity<FooEntity>();
 
             message = GetEntityInfo(extractedFooEntity);

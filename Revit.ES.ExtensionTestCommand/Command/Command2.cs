@@ -1,15 +1,14 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.DB.ExtensibleStorage;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
-using Revit.ES.ExtensionTestCommand.Simple;
+using Revit.ES.Extension.Demo.Model;
 using Revit.ES.Extension.ElementExtensions;
 
-namespace Revit.ES.ExtensionTestCommand
+namespace Revit.ES.Extension.Demo.Command
 {
     [Transaction(TransactionMode.Manual)]
     public class Command2 : IExternalCommand

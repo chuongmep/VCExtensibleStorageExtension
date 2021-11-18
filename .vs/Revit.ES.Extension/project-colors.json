@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2def625f-1b50-4ac3-8364-999f1861d471": {
+      "ProjectGuid": "2def625f-1b50-4ac3-8364-999f1861d471",
+      "DisplayName": "Revit.ES.Extension",
+      "ColorIndex": 0
+    },
+    "0949debe-12e7-4c38-9432-06490e022f86": {
+      "ProjectGuid": "0949debe-12e7-4c38-9432-06490e022f86",
+      "DisplayName": "Revit.ES.Extension.TestCommand",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

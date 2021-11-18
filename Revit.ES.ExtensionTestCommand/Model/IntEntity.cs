@@ -1,7 +1,6 @@
-using Revit.ES.Extension;
 using Revit.ES.Extension.Attributes;
 
-namespace Revit.ES.ExtensionTestCommand.Simple
+namespace Revit.ES.Extension.Demo.Model
 {
 // Set schema Id and Schema name as class attributes
 [Schema("4E5B6F62-B8B3-4A2F-9B06-DDD953D4D4BB",

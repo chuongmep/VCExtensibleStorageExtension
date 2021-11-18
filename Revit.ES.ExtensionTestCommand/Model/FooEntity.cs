@@ -2,18 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using Revit.ES.Extension;
-using Revit.ES.Extension.Attributes;
 using Autodesk.Revit.DB;
+using Revit.ES.Extension.Attributes;
 
-namespace Revit.ES.ExtensionTestCommand
+namespace Revit.ES.Extension.Demo.Model
 {
     [Schema("675551F3-04D4-4A33-94CA-0C2E34B2A5BF", "FooEntity",
         Documentation = "The class I want to save in the project")]
     public class FooEntity : IRevitEntity
     {
         #region Simple properties
-        
+
         [Field(Documentation = "Int32 Property")]
         public int IntProperty { get; set; }
 
@@ -66,10 +65,10 @@ namespace Revit.ES.ExtensionTestCommand
         [Field]
         public DeepEntity DeepEntityProperty { get; set; }
 
-#endregion
+        #endregion
 
-#region ArrayProperties
-        
+        #region ArrayProperties
+
 
         [Field(Documentation = "Int32 Collection Property")]
         public Collection<int> IntArrayProperty { get; set; }
@@ -165,7 +164,7 @@ namespace Revit.ES.ExtensionTestCommand
 #endif
         public SortedDictionary<string, double> StringDoubleMap { get; set; }
 
-#endregion
+        #endregion
 
         /// <summary>
         /// This property won't save in an Entity
